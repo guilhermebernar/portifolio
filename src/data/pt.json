@@ -1,0 +1,114 @@
+{
+    "name": "Guilherme Bernardo da Nóbrega",
+    "title": "Desenvolvedor Web Full Stack e Gestor de Projetos",
+    "aboutMe": "Desde a infância, sou fascinado por tecnologia, transformando essa paixão em soluções que beneficiam as pessoas. Após explorar diversas áreas e destacar-me na produção de eventos, há 5 anos decidi me dedicar à programação. Atualmente, sou desenvolvedor web Front End com ênfase em usabilidade, possuindo também expertise em Back End e formação Full-Stack. Busco combinar meus conhecimentos para proporcionar uma experiência de usuário excepcional.",
+    "recentProjects": {
+      "agency": "Projetos em que participei recentemente na agência Wicomm",
+      "agencyLink": "https://wicomm.com.br/",
+      "projects": [
+        {
+          "name": "AD Fashion",
+          "url": "https://www.adlifestyle.com.br/"
+        },
+        {
+          "name": "Toy Mania",
+          "url": "https://www.toymania.com.br/"
+        },
+        {
+          "name": "King & Joe",
+          "url": "https://www.kingjoe.com.br/"
+        },
+        {
+          "name": "Ladeira Bijuterias",
+          "url": "https://www.ladeirabijuterias.com.br/"
+        }
+      ],
+      "previousProjects": [
+        {
+          "name": "Kenzie Hub",
+          "description": "MVP de interface de login e perfil do usuário."
+        },
+        {
+          "name": "user-API-Express",
+          "description": "API de área do cliente."
+        },
+        {
+          "name": "Movie Play",
+          "description": "API e Banco de dados de filmes."
+        },
+        {
+          "name": "Virtual Assistance Monday Project",
+          "subProjects": [
+            {
+              "name": "API Monday - Assistente Virtual",
+              "description": "A proposta deste projeto é a de criar um meio de interação entre um banco de dados e uma aplicação FrontEnd baseada em uma assistente virtual."
+            },
+            {
+              "name": "Monday VA",
+              "description": "Interface do usuário que consome os dados da API criada."
+            }
+          ]
+        }
+      ]
+    },
+    "managementHistory": [
+      "Produtor de eventos e Cultura no Sistema Fator de Ensino",
+      "Fundador de empreendimento familiar: Bernardo's"
+    ],
+    "softSkills": [
+        {
+          "title": "Humanismo",
+          "text": "Comprometido em criar um trabalho significativo que beneficie as pessoas."
+        },
+        {
+          "title": "Pesquisa e desenvolvimento",
+          "text": "Apaixonado por pesquisa e desenvolvimento, sempre em busca de novas formas de resolver problemas ou otimizar soluções existentes."
+        },
+        {
+          "title": "Modelagem e gestão",
+          "text": "Habilidades eficazes de modelagem e gerenciamento, otimizando processos e aprimorando a colaboração em equipe."
+        },
+        {
+          "title": "Comunicação e manutenção de cultura empresarial",
+          "text": "Promovendo colaboração significativa e fomentando uma cultura de trabalho excepcional."
+        },
+        {
+          "title": "Ações baseadas em dados e evidencias",
+          "text": "Abordagem baseada em dados para resolução de problemas e tomada de decisões."
+        },
+        {
+          "title": "Visão complexa, crítica, holística e processual",
+          "text": "Capacidade de abordar problemas complexos com pensamento crítico e holístico, mantendo uma perspectiva orientada para o processo."
+        },
+        {
+          "title": "Visão de mercado voltada ao cliente",
+          "text": "Mentalidade orientada para o cliente, comprometida em solucionar seus problemas e atender às suas necessidades."
+        }
+    ],
+    "hardSkills": {
+      "frontEnd": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Styled Components", "TailWind"],
+      "backEnd": ["Node.JS", "ExpressJS", "Prisma", "Python", "C#", "SQL"],
+      "librariesAndFrameworks": ["ContextAPI", "Yup", "React-router-dom", "Framer Motion", "Muitas outras..."],
+      "devOps": ["Docker", "postegreSQL", "Django", "AWS", "Google Clound"],
+      "apis": ["Axios", "REST", "WebSocket", "GraphQL"],
+      "designAndPlanning": ["Figma", "Notion", "Photoshop", "Scrum", "PDCA", "Gantt Chart", "BSG"]
+    },
+    "testimonials": [
+      {
+        "name": "Alexandre Borges de Albuquerque",
+        "title": "Desenvolvedor Web Full-Stack",
+        "text": "Tive a honra de desenvolver com o Guilherme em um Projeto em grupo que participamos. Com seu perfil empreendedor, Guilherme não foge dos desafios , procura desafios novos e quando encontra alguma barreira, usa da sua criatividade e resiliência para vencer os problemas. O time que tiver o Guilherme como participante não vai se preocupar com a zona de conforto pois ele mesmo não se conforma, sempre procurando algum problema para resolver com proatividade, criatividade e MUITA dedicação."
+      },
+      {
+        "name": "Álvaro Alencar",
+        "title": "Full Stack Engineer",
+        "text": "Profissional bastante organizado e com excelente habilidade de comunicação."
+      }
+    ],
+    "contact": {
+      "phone": "+5521986368650",
+      "email": "guilhermebernardo@id.uff.br",
+      "github": "guilhermebernar"
+    }
+  }
+  
