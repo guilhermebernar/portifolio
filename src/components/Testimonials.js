@@ -1,12 +1,19 @@
 // components/Testimonials.js
 
-function Testimonials({ data }) {
-    return (
-      <section>
-        {/* Aqui você pode adicionar a estrutura e o conteúdo para a seção "Depoimentos" */}
-      </section>
-    );
-  }
-  
-  export default Testimonials;
-  
+export default function Testimonials({ data, getTranslation, language }) {
+  return (
+    <section>
+      <h2>{getTranslation('testimonialsTitle', language)}</h2>
+      <div className="testimonials-container">
+        {data.map((testimonial, index) => (
+          <blockquote key={index} className="testimonial">
+            <p className="testimonial-text">"{testimonial.text}"</p>
+            <footer className="testimonial-author">
+              <strong>{testimonial.name}</strong> - {testimonial.title}
+            </footer>
+          </blockquote>
+        ))}
+      </div>
+    </section>
+  );
+};
