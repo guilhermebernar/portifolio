@@ -6,8 +6,8 @@ export const metadata = {
     keywords: 'web developer, desenvolvedor web, front-end, back-end, full stack, VTEX, React, JavaScript, Node.js, HTML, CSS, SQL, MongoDB, MySQL, PostgreSQL, Git, GitHub, Bitbucket, Jira, Confluence, Scrum, Kanban, VTEX IO, VTEX CMS, VTEX Store Framework, VTEX IO Store, VTEX IO Checkout, VTEX IO Search, VTEX IO Promotions, VTEX IO Master Data, VTEX IO Workspaces, VTEX IO Site Editor, VTEX IO Site',
     author: 'Guilherme Bernardo da Nóbrega',
     ogTitle: 'Portfólio: Guilherme Bernardo da Nóbrega',
-    ogDescription: 'Explore o caminho profissional e os projetos de Guilherme Bernardo da Nóbrega, Desenvolvedor Web Full Stack.',
-    ogImage: '/caminho-para-sua-imagem.jpg',
+    ogDescription: 'Venha conhecer o caminho profissional e os projetos de Guilherme Bernardo da Nóbrega, Desenvolvedor Web Full Stack.',
+    ogImage: '/profile.png',
     // ogUrl: 'https://www.futurodominiopessoal.com.br',
     linkedin: 'https://www.linkedin.com/in/guilherme-bernardo-da-nobrega/'
 };

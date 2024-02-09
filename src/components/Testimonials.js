@@ -26,7 +26,7 @@ export default function Testimonials({ data, getTranslation, language }) {
       <div>
         {data.map((testimonial, index) => (
           <TestimonialBlockquote key={index}>
-            <TestimonialText>"{testimonial.text}"</TestimonialText>
+            <TestimonialText>{testimonial.text}</TestimonialText>
             <TestimonialFooter>
               <strong>{testimonial.name}</strong> - {testimonial.title}
             </TestimonialFooter>
