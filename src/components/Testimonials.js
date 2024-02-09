@@ -1,19 +1,38 @@
 // components/Testimonials.js
+import styled from 'styled-components';
+
+const TestimonialsSection = styled.section`
+  margin-bottom: 4rem;
+`;
+
+const TestimonialBlockquote = styled.blockquote`
+  border-left: 5px solid #ccc;
+  margin: 20px 0;
+  padding-left: 20px;
+`;
+
+const TestimonialText = styled.p`
+  font-style: italic;
+`;
+
+const TestimonialFooter = styled.footer`
+  margin-top: 10px;
+`;
 
 export default function Testimonials({ data, getTranslation, language }) {
   return (
-    <section>
+    <TestimonialsSection>
       <h2>{getTranslation('testimonialsTitle', language)}</h2>
-      <div className="testimonials-container">
+      <div>
         {data.map((testimonial, index) => (
-          <blockquote key={index} className="testimonial">
-            <p className="testimonial-text">"{testimonial.text}"</p>
-            <footer className="testimonial-author">
+          <TestimonialBlockquote key={index}>
+            <TestimonialText>"{testimonial.text}"</TestimonialText>
+            <TestimonialFooter>
               <strong>{testimonial.name}</strong> - {testimonial.title}
-            </footer>
-          </blockquote>
+            </TestimonialFooter>
+          </TestimonialBlockquote>
         ))}
       </div>
-    </section>
+    </TestimonialsSection>
   );
 };

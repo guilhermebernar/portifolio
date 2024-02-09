@@ -1,56 +1,65 @@
 {
     "name": "Guilherme Bernardo da Nóbrega",
     "title": "Desenvolvedor Web Full Stack e Gestor de Projetos",
-    "aboutMe": "Desde a infância, sou fascinado por tecnologia, transformando essa paixão em soluções que beneficiam as pessoas. Após explorar diversas áreas e destacar-me na produção de eventos, há 5 anos decidi me dedicar à programação. Atualmente, sou desenvolvedor web Front End com ênfase em usabilidade, possuindo também expertise em Back End e formação Full-Stack. Busco combinar meus conhecimentos para proporcionar uma experiência de usuário excepcional.",
-    "recentProjects": {
-      "agency": "Projetos em que participei recentemente na agência Wicomm",
-      "agencyLink": "https://wicomm.com.br/",
-      "projects": [
-        {
-          "name": "AD Fashion",
-          "url": "https://www.adlifestyle.com.br/"
-        },
-        {
-          "name": "Toy Mania",
-          "url": "https://www.toymania.com.br/"
-        },
-        {
-          "name": "King & Joe",
-          "url": "https://www.kingjoe.com.br/"
-        },
-        {
-          "name": "Ladeira Bijuterias",
-          "url": "https://www.ladeirabijuterias.com.br/"
-        }
-      ],
-      "previousProjects": [
-        {
-          "name": "Kenzie Hub",
-          "description": "MVP de interface de login e perfil do usuário."
-        },
-        {
-          "name": "user-API-Express",
-          "description": "API de área do cliente."
-        },
-        {
-          "name": "Movie Play",
-          "description": "API e Banco de dados de filmes."
-        },
-        {
-          "name": "Virtual Assistance Monday Project",
-          "subProjects": [
-            {
-              "name": "API Monday - Assistente Virtual",
-              "description": "A proposta deste projeto é a de criar um meio de interação entre um banco de dados e uma aplicação FrontEnd baseada em uma assistente virtual."
-            },
-            {
-              "name": "Monday VA",
-              "description": "Interface do usuário que consome os dados da API criada."
-            }
-          ]
-        }
-      ]
-    },
+    "aboutMe": "Desenvolvedor Web Full Stack, com ênfase em Front-end e líder de projetos com proficiência comprovada em metodologias ágeis e uma paixão por inovação tecnológica que agregam grande valor com entregas rápidas de resultado, cumprindo prazos excelentes. Me destaco na criação de aplicações web dinâmicas utilizando stacks avançadas - HTML, CSS, JavaScript, TypeScript, Node.JS, React, VTEX, entre muitos outros. Meu diferencial reside na habilidade de transformar ideias complexas em sistemas web intuitivos e manuteníveis, garantindo uma experiência de usuário excepcional e a escalabilidade necessária para o sucesso empresarial a longo prazo. Com um histórico de liderança em empreendimentos próprios, demonstro não só técnica, mas também visão estratégica e gestão eficaz de equipe, resultando em entregas de alto impacto. A documentação meticulosa e a arquitetura de software são a espinha dorsal do meu trabalho, assegurando soluções que excedem expectativas e suportam crescimento contínuo. Além disso, possuo um inglês avançado, com listening fluente e speaking em desenvolvimento acelerado, permitindo-me excelentes colaborações em ambientes internacionais e adaptabilidade a diversas culturas tecnológicas.",
+    "experiences": [
+      {
+        "type": "agency",
+        "name": "Wicomm",
+        "link": "https://wicomm.com.br/",
+        "projects": [
+          {
+            "name": "AD Fashion",
+            "url": "https://www.adlifestyle.com.br",
+            "thumbnail": "/thumbnail/ad-fashion.png"
+          },
+          {
+            "name": "Toy Mania",
+            "url": "https://www.toymania.com.br",
+            "thumbnail": "/thumbnail/toy-mania.png"
+          },
+          {
+            "name": "King & Joe",
+            "url": "https://www.kingjoe.com.br",
+            "thumbnail": "/thumbnail/king-joe.png"
+          },
+          {
+            "name": "Ladeira Bijuterias",
+            "url": "https://www.ladeirabijuterias.com.br",
+            "thumbnail": "/thumbnail/ladeira-bijuterias.png"
+          }
+        ]
+      },
+      {
+        "type": "education",
+        "name": "Kenzie Academy",
+        "link": "https://www.kenzie.com.br/",
+        "projects": [
+          {
+            "name": "Kenzie Hub",
+            "description": "MVP de interface de login e perfil do usuário."
+          },
+          {
+            "name": "user-API-Express",
+            "description": "API de área do cliente."
+          },
+          {
+            "name": "Movie Play",
+            "description": "API e Banco de dados de filmes."
+          },
+          {
+            "name": "API Monday - Assistente Virtual",
+            "description": "Banco de dados e uma aplicação de assistente virtual."
+          },
+          {
+            "name": "Monday VA",
+            "description": "Interface do usuário que consome os dados da API criada."
+          }
+            
+          
+        ]
+      }
+    ],
     "managementHistory": [
       "Produtor de eventos e Cultura no Sistema Fator de Ensino",
       "Fundador de empreendimento familiar: Bernardo's"
@@ -58,7 +67,7 @@
     "softSkills": [
         {
           "title": "Humanismo",
-          "text": "Comprometido em criar um trabalho significativo que beneficie as pessoas."
+          "text": "Comprometido em criar um trabalho significativo que beneficie as pessoas. Acredito que a tecnologia deve ser usada para melhorar a qualidade de vida e a experiência humana."
         },
         {
           "title": "Pesquisa e desenvolvimento",
@@ -86,12 +95,12 @@
         }
     ],
     "hardSkills": {
-      "frontEnd": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Styled Components", "TailWind"],
-      "backEnd": ["Node.JS", "ExpressJS", "Prisma", "Python", "C#", "SQL"],
-      "librariesAndFrameworks": ["ContextAPI", "Yup", "React-router-dom", "Framer Motion", "Muitas outras..."],
-      "devOps": ["Docker", "postegreSQL", "Django", "AWS", "Google Clound"],
-      "apis": ["Axios", "REST", "WebSocket", "GraphQL"],
-      "designAndPlanning": ["Figma", "Notion", "Photoshop", "Scrum", "PDCA", "Gantt Chart", "BSG"]
+      "frontEnd": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Styled Components", "TailWind", "⋯"],
+      "backEnd": ["Node.JS", "ExpressJS", "Prisma", "Python", "C#", "SQL", "⋯"],
+      "librariesAndFrameworks": ["ContextAPI", "Yup", "React-router-dom", "Framer Motion", "⋯"],
+      "devOps": ["Docker", "postegreSQL", "Django", "AWS", "Google Clound", "⋯"],
+      "apis": ["Axios", "REST", "WebSocket", "GraphQL", "⋯"],
+      "designAndPlanning": ["Figma", "Notion", "Photoshop", "Scrum", "PDCA", "Gantt Chart", "BSG", "⋯"]
     },
     "testimonials": [
       {

@@ -1,0 +1,50 @@
+const translations = {
+  en: {
+    "pageTitle": "Portfolio | Guilherme Bernardo da Nóbrega",
+    "softSkillsTitle": "Soft Skills",
+    "hardSkillsTitle": "Hard Skills",
+    "experiences": "Projects",
+    "aboutMeTitle": "About Me",
+    "managementHistoryTitle": "Management History",
+    "testimonialsTitle": "Testimonials",
+    "contactTitle": "Contact",
+    "librariesAndFrameworks": "Libraries and Frameworks",
+    "devOps": "DevOps",
+    "apis": "APIs",
+    "backEnd": "Back-end",
+    "frontEnd": "Front-end",
+    "designAndPlanning": "Design and Planning",
+    "agencyLink": "Participation at agency ",
+    "phone": "Phone",
+    "email": "Email",
+    "github": "Github",
+    "agencyProjects": "Projects in previous jobs",
+    "visitWebsite": "Participation in the projects in ",
+    "educationalProjects": "Educational Projects"
+  },
+  pt: {
+    "pageTitle": "Portfólio | Guilherme Bernardo da Nóbrega",
+    "softSkillsTitle": "Habilidades Interpessoais",
+    "hardSkillsTitle": "Habilidades Técnicas",
+    "experiences": "Projetos",
+    "aboutMeTitle": "Sobre Mim",
+    "managementHistoryTitle": "Histórico de Gestão",
+    "testimonialsTitle": "Depoimentos",
+    "contactTitle": "Contato",
+    "librariesAndFrameworks": "Bibliotecas e Frameworks",
+    "devOps": "DevOps",
+    "apis": "APIs",
+    "backEnd": "Back-end",
+    "frontEnd": "Front-end",
+    "designAndPlanning": "Design e Planejamento",
+    "agencyLink": "Participações na agência ",
+    "phone": "Telefone",
+    "email": "Email",
+    "github": "Github",
+    "agencyProjects": "Projetos em trabalhos anteriores",
+    "visitWebsite": "Participações nos projetos na ",
+    "educationalProjects": "Projetos Educacionais"
+  }
+};
+
+export default translations;

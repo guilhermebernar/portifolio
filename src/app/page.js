@@ -1,46 +1,35 @@
-'use client';
+'use client'
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
 import AboutMe from '../components/AboutMe';
 import RecentProjects from '../components/RecentProjects';
 import Testimonials from '../components/Testimonials';
-import Contact from '../components/Contact';
 import Skills from '../components/Skills';
-
+import LanguageToggle from '../components/LenguageToggle';
 import dataPt from '../data/pt.json';
 import dataEn from '../data/en.json';
-import { useEffect, useState } from 'react';
+import translations from './tagTranslation';
+import { VideoContainerLoading } from '../style/main';
+import { BackgroundVideo } from '../components/BackgroundVideo';
+import ProfileSection from '@/components/ProfileSection';
 
-const translations = {
-  en: {
-    "pageTitle": "Portfolio | Guilherme Bernardo da Nóbrega",
-    "softSkillsTitle": "Soft Skills",
-    "hardSkillsTitle": "Hard Skills",
-    "recentProjectsTitle": "Recent Projects",
-    "previousProjectsTitle": "Previous Projects",
-    "aboutMeTitle": "About Me",
-    "managementHistoryTitle": "Management History",
-    "testimonialsTitle": "Testimonials",
-    "contactTitle": "Contact"
-  },
-  pt: {
-    "pageTitle": "Portfólio | Guilherme Bernardo da Nóbrega",
-    "softSkillsTitle": "Habilidades Interpessoais",
-    "hardSkillsTitle": "Habilidades Técnicas",
-    "recentProjectsTitle": "Projetos Recentes",
-    "previousProjectsTitle": "Projetos Anteriores",
-    "aboutMeTitle": "Sobre Mim",
-    "managementHistoryTitle": "Histórico de Gestão",
-    "testimonialsTitle": "Depoimentos",
-    "contactTitle": "Contato"
-  }
-};
+
 
 export default function Home() {
-  const [language, setLanguage] = useState('pt'); // Estado inicial da língua
+  const [language, setLanguage] = useState('pt');
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const browserLanguage = navigator.language.startsWith('pt') ? 'pt' : 'en';
     setLanguage(browserLanguage);
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const handleLanguageToggle = () => {
@@ -52,48 +41,59 @@ export default function Home() {
     return translations[language][key] || key;
   };
 
-  // Atualiza os dados com base na língua selecionada
   const data = language === 'pt' ? dataPt : dataEn;
 
   return (
-    <main>
+    <>
+      {loading ? (
+        <VideoContainerLoading>
+          <video autoPlay loop muted onEnded={() => setLoading(false)}>
+            <source src="/loading.mp4" type="video/mp4" />
+          </video>
+        </VideoContainerLoading>
+      ) : (
+        <>
+          <BackgroundVideo />
+          <main
+            lang={language === 'pt' ? 'pt-BR' : 'en-US'}
+            style={{ visibility: loading ? 'hidden' : 'visible' }}
+          >
+            <header>
+              <LanguageToggle language={language} handleLanguageToggle={handleLanguageToggle} />
+            </header>
+            <ProfileSection
+              data={data}
+              getTranslation={getTranslation}
+              language={language}
+            />
+            <AboutMe
+              data={data.aboutMe}
+              getTranslation={getTranslation}
+              language={language}
+            />
+            <RecentProjects
+              experiences={data.experiences}
+              getTranslation={getTranslation}
+              language={language}
+            />
+            <Skills
+              softSkills={data.softSkills}
+              hardSkills={data.hardSkills}
+              getTranslation={getTranslation}
+              language={language}
+            />
+            <Testimonials
+              data={data.testimonials}
+              getTranslation={getTranslation}
+              language={language}
+            />
+          </main>
+        </>
+      )}
       <Head>
         <title>{getTranslation('pageTitle')}</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-        <button onClick={handleLanguageToggle}>
-          {language === 'pt' ? 'EN' : 'PT'}
-        </button>
-        <h1>{data.name}</h1>
-        <h2>{data.title}</h2>
-      </header>
-      <AboutMe
-        data={data.aboutMe}
-        getTranslation={getTranslation}
-        language={language}
-      />
-      <RecentProjects
-        data={data.recentProjects}
-        getTranslation={getTranslation}
-        language={language}
-        history={data.managementHistory}
-      />
-      <Skills
-        softSkills={data.softSkills}
-        hardSkills={data.hardSkills}
-        getTranslation={getTranslation}
-        language={language}
-      />
-      <Testimonials
-        data={data.testimonials}
-        getTranslation={getTranslation}
-        language={language}
-      />
-      <Contact
-        data={data.contact}
-        getTranslation={getTranslation}
-        language={language}
-      />
-    </main>
+    </>
   );
-};
+}
