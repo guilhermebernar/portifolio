@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import translations from 'caminho/para/app/tagTranslation';
-import dataPt from 'caminho/para/data/pt.json';
-import dataEn from 'caminho/para/data/en.json';
+import dataPt from '../data/pt.json';
+import dataEn from '../data/en.json';
 
 export default function useMainOrchestrator() {
   const [language, setLanguage] = useState('pt');
