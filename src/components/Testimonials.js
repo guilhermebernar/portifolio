@@ -1,23 +1,5 @@
-// components/Testimonials.js
-import styled from 'styled-components';
+import { TestimonialBlockquote, TestimonialFooter, TestimonialText, TestimonialsSection } from "@/style/components/Testimonials";
 
-const TestimonialsSection = styled.section`
-  margin-bottom: 4rem;
-`;
-
-const TestimonialBlockquote = styled.blockquote`
-  border-left: 5px solid #ccc;
-  margin: 20px 0;
-  padding-left: 20px;
-`;
-
-const TestimonialText = styled.p`
-  font-style: italic;
-`;
-
-const TestimonialFooter = styled.footer`
-  margin-top: 10px;
-`;
 
 export default function Testimonials({ data, getTranslation, language }) {
   return (

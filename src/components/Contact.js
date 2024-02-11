@@ -1,29 +1,10 @@
-// components/Contact.js
-import styled from 'styled-components';
 
-const Section = styled.section`
-  color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem; 
-`;
+import { ContactContainer, ContactLink } from "@/style/components/Contact";
 
-const ContactLink = styled.a`
-  color: white;
-  text-decoration: none;
-
-  @media (max-width: 767px) {
-    font-size: 12px;
-  }
-
-  &:hover, &:focus {
-    text-decoration: underline;
-  }
-`;
 
 export default function Contact({ data, getTranslation, language }) {
   return (
-    <Section>
+    <ContactContainer>
       {/* <h2>{getTranslation('contactTitle', language)}</h2> */}
       <div>
         <strong>{getTranslation('phone', language)}: </strong> 
@@ -43,6 +24,6 @@ export default function Contact({ data, getTranslation, language }) {
           {data.github} 🔗
         </ContactLink>  
       </div>
-    </Section>
+    </ContactContainer>
   );
 };

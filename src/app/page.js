@@ -1,50 +1,34 @@
 'use client'
+
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
 import AboutMe from '../components/AboutMe';
-import RecentProjects from '../components/RecentProjects';
+import Projects from '../components/Projects';
 import Testimonials from '../components/Testimonials';
 import Skills from '../components/Skills';
 import LanguageToggle from '../components/LenguageToggle';
-import dataPt from '../data/pt.json';
-import dataEn from '../data/en.json';
-import translations from './tagTranslation';
-import { VideoContainerLoading } from '../style/main';
 import { BackgroundVideo } from '../components/BackgroundVideo';
-import ProfileSection from '@/components/ProfileSection';
+import ProfileSection from '../components/ProfileSection';
 
+import { VideoContainerLoading } from '../style/main';
+
+import mainOrchestrator from '@/hooks/main';
 
 
 export default function Home() {
-  const [language, setLanguage] = useState('pt');
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const browserLanguage = navigator.language.startsWith('pt') ? 'pt' : 'en';
-    setLanguage(browserLanguage);
-  }, []);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 5000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  const handleLanguageToggle = () => {
-    const newLanguage = language === 'pt' ? 'en' : 'pt';
-    setLanguage(newLanguage);
-  };
-
-  const getTranslation = (key) => {
-    return translations[language][key] || key;
-  };
-
-  const data = language === 'pt' ? dataPt : dataEn;
+  const {
+    data,
+    loading,
+    language,
+    getTranslation,
+    handleLanguageToggle,
+  } = mainOrchestrator();
 
   return (
     <>
+      <Head>
+        <title>{getTranslation('pageTitle')}</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       {loading ? (
         <VideoContainerLoading>
           <video autoPlay loop muted onEnded={() => setLoading(false)}>
@@ -71,7 +55,7 @@ export default function Home() {
               getTranslation={getTranslation}
               language={language}
             />
-            <RecentProjects
+            <Projects
               experiences={data.experiences}
               getTranslation={getTranslation}
               language={language}
@@ -90,10 +74,7 @@ export default function Home() {
           </main>
         </>
       )}
-      <Head>
-        <title>{getTranslation('pageTitle')}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+
     </>
   );
 }
