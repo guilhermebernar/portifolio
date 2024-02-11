@@ -11,7 +11,7 @@ import ProfileSection from '../components/ProfileSection';
 
 import { VideoContainerLoading } from '../style/main';
 
-import mainOrchestrator from '@/hooks/main';
+import useMainOrchestrator from 'caminho/para/hooks/main';
 
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
     language,
     getTranslation,
     handleLanguageToggle,
-  } = mainOrchestrator();
+  } = useMainOrchestrator();
 
   return (
     <>

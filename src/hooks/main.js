@@ -1,9 +1,9 @@
-import translations from '@/app/tagTranslation';
-import dataPt from '../data/pt.json';
-import dataEn from '@/data/en.json';
 import { useState, useEffect } from 'react';
+import translations from 'caminho/para/app/tagTranslation';
+import dataPt from 'caminho/para/data/pt.json';
+import dataEn from 'caminho/para/data/en.json';
 
-const mainOrchestrator = () => {
+export default function useMainOrchestrator() {
   const [language, setLanguage] = useState('pt');
   const [loading, setLoading] = useState(true);
 
@@ -16,7 +16,6 @@ const mainOrchestrator = () => {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 5000);
-
     return () => clearTimeout(timer);
   }, []);
 
@@ -31,7 +30,5 @@ const mainOrchestrator = () => {
 
   const data = language === 'pt' ? dataPt : dataEn;
 
-  return {  data, language, loading, handleLanguageToggle, getTranslation};
-};
-
-export default mainOrchestrator;
+  return { data, language, loading, handleLanguageToggle, getTranslation };
+}
