@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import translations from 'caminho/para/app/tagTranslation';
+import translations from '../app/tagTranslation';
 import dataPt from '../data/pt.json';
 import dataEn from '../data/en.json';
 
