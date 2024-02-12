@@ -1,5 +1,4 @@
 const nextConfig = {
-  esModule: true,
   trailingSlash: true,
   images: {
     unoptimized: true,

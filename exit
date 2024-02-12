@@ -1,0 +1,25 @@
+*   [33mdc1146f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m Merge branch 'main' of https://github.com/guilhermebernar/portifolio
+[31m|[m[32m\[m  
+[31m|[m * [33m2dfaa25[m[33m ([m[1;31morigin/main[m[33m)[m Final release
+* [32m|[m [33m377b493[m Release version 1.0.1 | Start of performance optimization
+[32m|[m[32m/[m  
+* [33ma9a71ce[m[33m ([m[1;33mtag: 1.0.1[m[33m)[m Final release
+* [33m1fef338[m 12 deploy resolution
+* [33m9e19898[m 11 deploy resolution | images and videos
+* [33mef532f5[m 10 deploy resolution
+* [33mc097771[m 09 deploy resolution | hook error
+* [33m36a0e01[m 08 deploy resolution | hook error
+* [33m63b1a6e[m 07 deploy resolution | hook error
+* [33m0626647[m 06 deploy resolution | hook error
+* [33ma2d57e3[m 05 deploy resolution
+* [33m5d80b28[m 04 deploy resolution | optimized code readability and start of image implementation by next component
+* [33mb538357[m 04 deploy resolution
+* [33m892e666[m 03 deploy resolution
+* [33m20e2cac[m 02 deploy resolution
+* [33m5e49b77[m 01 deploy resolution
+* [33m7fd9178[m Create nextjs.yml
+* [33m96ef687[m meta data edit
+* [33m56d7f6a[m done
+* [33md50d851[m portifolio base | translation button made
+* [33mb571176[m structure
+* [33m9692800[m Initial commit from Create Next App
