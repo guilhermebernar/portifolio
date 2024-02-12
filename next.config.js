@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  output: "export",
   webpack(config, options) {
     config.module.rules.push({
       test: /\.mp4$/,
