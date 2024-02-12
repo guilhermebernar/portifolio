@@ -1,6 +1,9 @@
 import './globals.css'
 
 export const metadata = {
+    icons: {
+        favicon: '/favicon.ico'
+    },
     title: 'Portfólio | Guilherme Bernardo da Nóbrega',
     description: 'Portfólio pessoal de Guilherme Bernardo da Nóbrega exibindo habilidades de desenvolvimento web, projetos e trajetória profissional.',
     keywords: 'web developer, desenvolvedor web, front-end, back-end, full stack, VTEX, React, JavaScript, Node.js, HTML, CSS, SQL, MongoDB, MySQL, PostgreSQL, Git, GitHub, Bitbucket, Jira, Confluence, Scrum, Kanban, VTEX IO, VTEX CMS, VTEX Store Framework, VTEX IO Store, VTEX IO Checkout, VTEX IO Search, VTEX IO Promotions, VTEX IO Master Data, VTEX IO Workspaces, VTEX IO Site Editor, VTEX IO Site',

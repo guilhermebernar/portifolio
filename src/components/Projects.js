@@ -8,15 +8,15 @@ export default function Projects({
 }) {
   const getImagePath = (thumbnail) => {
     if (!thumbnail) {
-      return console.log("aguardando thambnail...");
+      return null;
     }
     try {
       return require(`src/app/assets/images/thumbnail/${thumbnail}`).default;
     } catch (e) {
-      return console.error(`Cannot find image: ${thumbnail}`);
+      console.error(`Cannot find image: ${thumbnail}`);
+      return null;
     }
   };
-
 
   return (
     <ProjectsContainer>
@@ -38,17 +38,18 @@ export default function Projects({
                 <p>
                   {project.description}
                 </p>
-                <ProjectThumbnail style={{ borderRadius: '10px' }}>
-                  <Image
-                    src={getImagePath(project.thumbnail)}
-                    alt={project.name}
-                    width={500}
-                    height={300}
-                    unoptimized={true}
-                    layout="responsive"
-                  />
-                </ProjectThumbnail>
-
+                {project.thumbnail && getImagePath(project.thumbnail) && (
+                  <ProjectThumbnail>
+                    <Image
+                      src={getImagePath(project.thumbnail)}
+                      alt={project.name}
+                      width={500}
+                      height={300}
+                      unoptimized={true}
+                      layout="responsive"
+                    />
+                  </ProjectThumbnail>
+                )}
               </ProjectItem>
             ))}
           </ProjectsGrid>
