@@ -60,10 +60,11 @@ export const ProjectLink = styled.a`
   }
 `;
 
-export const ProjectThumbnail = styled.img`
+export const ProjectThumbnail = styled.div`
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px;
+  border-radius: 10px;
+  overflow: hidden; 
   margin-top: 8px;
 `;

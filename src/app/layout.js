@@ -8,7 +8,6 @@ export const metadata = {
     ogTitle: 'Portfólio: Guilherme Bernardo da Nóbrega',
     ogDescription: 'Venha conhecer o caminho profissional e os projetos de Guilherme Bernardo da Nóbrega, Desenvolvedor Web Full Stack.',
     ogImage: '/profile.png',
-    // ogUrl: 'https://www.futurodominiopessoal.com.br',
     linkedin: 'https://www.linkedin.com/in/guilherme-bernardo-da-nobrega/'
 };
 

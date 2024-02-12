@@ -11,22 +11,22 @@
           {
             "name": "AD Fashion",
             "url": "https://www.adlifestyle.com.br",
-            "thumbnail": "/thumbnail/ad-fashion.png"
+            "thumbnail": "ad-fashion.png"
           },
           {
             "name": "Toy Mania",
             "url": "https://www.toymania.com.br",
-            "thumbnail": "/thumbnail/toy-mania.png"
+            "thumbnail": "toy-mania.png"
           },
           {
             "name": "King & Joe",
             "url": "https://www.kingjoe.com.br",
-            "thumbnail": "/thumbnail/king-joe.png"
+            "thumbnail": "king-joe.png"
           },
           {
             "name": "Ladeira Bijuterias",
             "url": "https://www.ladeirabijuterias.com.br",
-            "thumbnail": "/thumbnail/ladeira-bijuterias.png"
+            "thumbnail": "ladeira-bijuterias.png"
           }
         ]
       },

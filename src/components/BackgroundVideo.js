@@ -1,10 +1,8 @@
 import { VideoContainer } from "@/style/components/BackgroundVideo";
+import BackgroundVideoFile from "@/app/assets/videos/background.mp4";
 
 export const BackgroundVideo = () => (
   <VideoContainer>
-    <video autoPlay loop muted playsInline>
-      <source src="/background.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <video src={BackgroundVideoFile}  autoPlay loop muted playsInline/>
   </VideoContainer>
 );

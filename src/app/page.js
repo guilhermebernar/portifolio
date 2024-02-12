@@ -8,7 +8,7 @@ import Skills from '../components/Skills';
 import LanguageToggle from '../components/LenguageToggle';
 import { BackgroundVideo } from '../components/BackgroundVideo';
 import ProfileSection from '../components/ProfileSection';
-
+import LoadingVideo from '../app/assets/videos/loading.mp4';
 import { VideoContainerLoading } from '../style/main';
 
 import useMainOrchestrator from '../hooks/main';
@@ -19,6 +19,7 @@ export default function Home() {
     data,
     loading,
     language,
+    setLoading,
     getTranslation,
     handleLanguageToggle,
   } = useMainOrchestrator();
@@ -31,9 +32,7 @@ export default function Home() {
       </Head>
       {loading ? (
         <VideoContainerLoading>
-          <video autoPlay loop muted onEnded={() => setLoading(false)}>
-            <source src="/loading.mp4" type="video/mp4" />
-          </video>
+          <video src={LoadingVideo} autoPlay loop muted onEnded={() => setLoading(false)}/>
         </VideoContainerLoading>
       ) : (
         <>

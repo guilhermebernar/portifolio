@@ -30,5 +30,5 @@ export default function useMainOrchestrator() {
 
   const data = language === 'pt' ? dataPt : dataEn;
 
-  return { data, language, loading, handleLanguageToggle, getTranslation };
+  return { data, language, loading, handleLanguageToggle, getTranslation, setLoading };
 }
