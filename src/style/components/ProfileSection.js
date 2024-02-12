@@ -43,9 +43,15 @@ export const ProfileImageContainer = styled.div`
   width: 100%;
   max-width: 220px;
   margin: 2rem 3rem 2rem 0;
+  img{
 
+  }
   @media (max-width: 767px) {
     margin: 0 auto;
+    img{
+      width: 100%;
+      height: auto;
+  }
   }
 `;
 

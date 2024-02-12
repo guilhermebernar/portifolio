@@ -60,12 +60,14 @@ export default function Home() {
               language={language}
             />
             <Skills
+              loading="lazy"
               softSkills={data.softSkills}
               hardSkills={data.hardSkills}
               getTranslation={getTranslation}
               language={language}
             />
             <Testimonials
+              loading="lazy"
               data={data.testimonials}
               getTranslation={getTranslation}
               language={language}
