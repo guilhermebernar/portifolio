@@ -11,7 +11,10 @@ export const metadata = {
     ogTitle: 'Portfólio: Guilherme Bernardo da Nóbrega',
     ogDescription: 'Venha conhecer o caminho profissional e os projetos de Guilherme Bernardo da Nóbrega, Desenvolvedor Web Full Stack.',
     ogImage: '/profile.png',
-    linkedin: 'https://www.linkedin.com/in/guilherme-bernardo-da-nobrega/'
+    linkedin: 'https://www.linkedin.com/in/guilherme-bernardo-da-nobrega/',
+    languages: ['pt', 'en'],
+    "Content-Language": "pt, en"
+
 };
 
 export default function RootLayout({ children }) {
