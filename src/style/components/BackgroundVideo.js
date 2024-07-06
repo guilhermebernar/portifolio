@@ -11,7 +11,8 @@ export const VideoContainer = styled.div`
   transform: translate(-50%, -50%);
   z-index: -1000;
   overflow: hidden;
-  opacity: 0.5 !important;
+  color: transparent;
+  opacity: 0.94 !important;
   
   video {
     position: absolute;
