@@ -10,12 +10,7 @@ export default function Projects({
     if (!thumbnail) {
       return null;
     }
-    try {
-      return require(`src/app/assets/images/thumbnail/${thumbnail}`).default;
-    } catch (e) {
-      console.error(`Cannot find image: ${thumbnail}`);
-      return null;
-    }
+    return `/assets/images/thumbnail/${thumbnail}`;
   };
 
   return (
