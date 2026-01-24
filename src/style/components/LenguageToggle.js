@@ -14,11 +14,7 @@ export const ToggleContainer = styled.div`
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  margin: 3rem auto -1rem 5rem;
-
-  @media (max-width: 767px) {
-    margin: 3rem auto 1rem auto;
-  }
+  margin: 2rem auto 0 auto;
 `;
 
 export const ToggleBall = styled.div`

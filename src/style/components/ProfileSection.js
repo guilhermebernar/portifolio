@@ -8,12 +8,37 @@ export const HeroContainer = styled.section`
   text-align: center;
   min-height: 80vh;
   padding: 2rem;
-  gap: 1.5rem;
+  gap: 2rem;
 
   @media (max-width: 768px) {
     min-height: 70vh;
     padding: 1.5rem;
   }
+`;
+
+export const HeroImageContainer = styled.div`
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    width: 140px;
+    height: 140px;
+  }
+`;
+
+export const HeroContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 `;
 
 export const HeroTitle = styled.h1`
