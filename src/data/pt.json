@@ -1,123 +1,68 @@
 {
-    "name": "Guilherme Bernardo da Nóbrega",
-    "title": "Desenvolvedor Web Full Stack e Gestor de Projetos",
-    "aboutMe": "Desenvolvedor Web Full Stack, com ênfase em Front-end e líder de projetos com proficiência comprovada em metodologias ágeis e uma paixão por inovação tecnológica que agregam grande valor com entregas rápidas de resultado, cumprindo prazos excelentes. Me destaco na criação de aplicações web dinâmicas utilizando stacks avançadas - HTML, CSS, JavaScript, TypeScript, Node.JS, React, VTEX, entre muitos outros. Meu diferencial reside na habilidade de transformar ideias complexas em sistemas web intuitivos e manuteníveis, garantindo uma experiência de usuário excepcional e a escalabilidade necessária para o sucesso empresarial a longo prazo. Com um histórico de liderança em empreendimentos próprios, demonstro não só técnica, mas também visão estratégica e gestão eficaz de equipe, resultando em entregas de alto impacto. A documentação meticulosa e a arquitetura de software são a espinha dorsal do meu trabalho, assegurando soluções que excedem expectativas e suportam crescimento contínuo. Além disso, possuo um inglês avançado, com listening fluente e speaking em desenvolvimento acelerado, permitindo-me excelentes colaborações em ambientes internacionais e adaptabilidade a diversas culturas tecnológicas.",
-    "experiences": [
-      {
-        "type": "agency",
-        "name": "Wicomm",
-        "link": "https://wicomm.com.br/",
-        "projects": [
-          {
-            "name": "AD Fashion",
-            "url": "https://www.adlifestyle.com.br",
-            "thumbnail": "ad-fashion.png"
-          },
-          {
-            "name": "Toy Mania",
-            "url": "https://www.toymania.com.br",
-            "thumbnail": "toy-mania.png"
-          },
-          {
-            "name": "King & Joe",
-            "url": "https://www.kingjoe.com.br",
-            "thumbnail": "king-joe.png"
-          },
-          {
-            "name": "Ladeira Bijuterias",
-            "url": "https://www.ladeirabijuterias.com.br",
-            "thumbnail": "ladeira-bijuterias.png"
-          }
-        ]
-      },
-      {
-        "type": "education",
-        "name": "Kenzie Academy",
-        "link": "https://www.kenzie.com.br/",
-        "projects": [
-          {
-            "name": "Kenzie Hub",
-            "description": "MVP de interface de login e perfil do usuário."
-          },
-          {
-            "name": "user-API-Express",
-            "description": "API de área do cliente."
-          },
-          {
-            "name": "Movie Play",
-            "description": "API e Banco de dados de filmes."
-          },
-          {
-            "name": "API Monday - Assistente Virtual",
-            "description": "Banco de dados e uma aplicação de assistente virtual."
-          },
-          {
-            "name": "Monday VA",
-            "description": "Interface do usuário que consome os dados da API criada."
-          }
-            
-          
-        ]
-      }
-    ],
-    "managementHistory": [
-      "Produtor de eventos e Cultura no Sistema Fator de Ensino",
-      "Fundador de empreendimento familiar: Bernardo's"
-    ],
-    "softSkills": [
-        {
-          "title": "Humanismo",
-          "text": "Comprometido em criar um trabalho significativo que beneficie as pessoas. Acredito que a tecnologia deve ser usada para melhorar a qualidade de vida e a experiência humana."
-        },
-        {
-          "title": "Pesquisa e desenvolvimento",
-          "text": "Apaixonado por pesquisa e desenvolvimento, sempre em busca de novas formas de resolver problemas ou otimizar soluções existentes."
-        },
-        {
-          "title": "Modelagem e gestão",
-          "text": "Habilidades eficazes de modelagem e gerenciamento, otimizando processos e aprimorando a colaboração em equipe."
-        },
-        {
-          "title": "Comunicação e manutenção de cultura empresarial",
-          "text": "Promovendo colaboração significativa e fomentando uma cultura de trabalho excepcional."
-        },
-        {
-          "title": "Ações baseadas em dados e evidencias",
-          "text": "Abordagem baseada em dados para resolução de problemas e tomada de decisões."
-        },
-        {
-          "title": "Visão complexa, crítica, holística e processual",
-          "text": "Capacidade de abordar problemas complexos com pensamento crítico e holístico, mantendo uma perspectiva orientada para o processo."
-        },
-        {
-          "title": "Visão de mercado voltada ao cliente",
-          "text": "Mentalidade orientada para o cliente, comprometida em solucionar seus problemas e atender às suas necessidades."
-        }
-    ],
-    "hardSkills": {
-      "frontEnd": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Styled Components", "TailWind", "⋯"],
-      "backEnd": ["Node.JS", "ExpressJS", "Prisma", "Python", "C#", "SQL", "⋯"],
-      "librariesAndFrameworks": ["ContextAPI", "Yup", "React-router-dom", "Framer Motion", "⋯"],
-      "devOps": ["Docker", "postegreSQL", "Django", "AWS", "Google Clound", "⋯"],
-      "apis": ["Axios", "REST", "WebSocket", "GraphQL", "⋯"],
-      "designAndPlanning": ["Figma", "Notion", "Photoshop", "Scrum", "PDCA", "Gantt Chart", "BSG", "⋯"]
+  "name": "Guilherme Bernardo da Nóbrega",
+  "heroTitle": "Arquitetura de Sistemas Digitais · Automação · Infraestrutura",
+  "heroSubtitle": "Construo sistemas e automações que escalam com governança, segurança e evolução contínua.",
+  "aboutMe": {
+    "intro": "Atuo na arquitetura e desenvolvimento de sistemas digitais com foco em automação, integração e escalabilidade. Trabalho na interseção entre tecnologia e negócio, assumindo responsabilidade técnica por produtos e infraestruturas críticas. Atualmente atuo com identidade (OIDC), automação de processos e integração de módulos em ambientes institucionais.",
+    "focus": [
+      "Arquitetura de sistemas e integrações",
+      "Automação e orquestração de processos",
+      "Identidade e controle de acesso (OIDC/SSO)",
+      "Infraestrutura e operação (Docker/Cloud)"
+    ]
+  },
+  "cases": [
+    {
+      "id": "hospital-do-olho",
+      "title": "Hospital do Olho - Intranet / Identidade / Integração",
+      "problem": "Necessidade de centralizar acesso a múltiplos sistemas internos, integrar sistemas legados, modernizar intranet, implementar trackers de monitoramento e HelpDesk de Ouvidoria.",
+      "solution": "Arquitetura com SSO via OIDC, integrações API entre sistemas, portal unificado para todos os módulos.",
+      "result": "Melhor governança e controle de acesso, aumento de produtividade com redução de retrabalho, padronização de processos e interfaces.",
+      "tags": ["OIDC", "SSO", "Integração", "Intranet", "Saúde"]
     },
-    "testimonials": [
-      {
-        "name": "Alexandre Borges de Albuquerque",
-        "title": "Desenvolvedor Web Full-Stack",
-        "text": "Tive a honra de desenvolver com o Guilherme em um Projeto em grupo que participamos. Com seu perfil empreendedor, Guilherme não foge dos desafios , procura desafios novos e quando encontra alguma barreira, usa da sua criatividade e resiliência para vencer os problemas. O time que tiver o Guilherme como participante não vai se preocupar com a zona de conforto pois ele mesmo não se conforma, sempre procurando algum problema para resolver com proatividade, criatividade e MUITA dedicação."
-      },
-      {
-        "name": "Álvaro Alencar",
-        "title": "Full Stack Engineer",
-        "text": "Profissional bastante organizado e com excelente habilidade de comunicação."
-      }
-    ],
-    "contact": {
-      "phone": "+5521986368650",
-      "email": "guilhermebernardo@id.uff.br",
-      "github": "guilhermebernar"
+    {
+      "id": "ecommerce-wicomm",
+      "title": "E-commerce em escala (Wicomm)",
+      "problem": "Lojas VTEX/WAKE precisando de customizações complexas mantendo performance.",
+      "solution": "Componentes customizados, integrações com ERPs, otimização de checkout.",
+      "result": "4 lojas entregues (AD Fashion, Toy Mania, King & Joe, Ladeira Bijuterias).",
+      "tags": ["VTEX", "WAKE", "E-commerce", "React"]
+    },
+    {
+      "id": "automacao-processos",
+      "title": "Automação de Processos",
+      "problem": "Processos manuais repetitivos consumindo tempo de equipes.",
+      "solution": "Workflows automatizados para integração entre sistemas e notificações.",
+      "result": "Automação de fluxos operacionais, economia de tempo em tarefas manuais.",
+      "tags": ["Automação", "Workflows", "Integração"]
     }
+  ],
+  "archiveProjects": {
+    "title": "Projetos Educacionais",
+    "source": "Kenzie Academy",
+    "link": "https://www.kenzie.com.br/"
+  },
+  "skills": {
+    "sistemasArquitetura": {
+      "title": "Sistemas & Arquitetura",
+      "items": ["APIs REST/GraphQL", "Integrações B2B", "Modelagem de dados", "OIDC/SSO"]
+    },
+    "automacao": {
+      "title": "Automação",
+      "items": ["Orquestração", "Workflows", "ETL", "Integrações"]
+    },
+    "infraOperacao": {
+      "title": "Infra & Operação",
+      "items": ["Docker", "CI/CD", "Cloudflare", "AWS/GCP"]
+    },
+    "frontendProduto": {
+      "title": "Front-end de Produto",
+      "items": ["React/Next.js", "TypeScript", "Styled Components"]
+    }
+  },
+  "contact": {
+    "email": "contato@gbernardo.dev",
+    "linkedin": "guilherme-bernardo-da-nobrega",
+    "github": "guilhermebernar"
   }
-  
+}

@@ -1,74 +1,92 @@
 import styled from "styled-components";
 
-export const ProfileContainer = styled.section`
+export const HeroContainer = styled.section`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  margin: 0 auto;
-  flex-direction: column;
+  text-align: center;
+  min-height: 80vh;
+  padding: 2rem;
+  gap: 1.5rem;
 
-  h1{
-    font-size: 20px;
-    background-image: linear-gradient(120deg, rgba(119, 129, 255, 0.68), rgba(223, 119, 255, 0.68));
+  @media (max-width: 768px) {
+    min-height: 70vh;
+    padding: 1.5rem;
+  }
+`;
+
+export const HeroTitle = styled.h1`
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(120deg, #7781ff, #a78bfa);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  display: block;
-  }
+  max-width: 900px;
+  line-height: 1.3;
 
-  h2{
-    font-size: 13px;
-    margin-bottom: 20px;
-  }
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 0 0 2rem 0;
-
-    padding: 0 0 1rem 1rem;
-    h1{
-    font-size: 24px;
-    }
-    h2{
-    font-size: 16px;
-    margin-bottom: 20px;
-    }
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
   }
 `;
 
-export const ProfileImageContainer = styled.div`
-  width: 100%;
-  max-width: 220px;
-  margin: 2rem 3rem 2rem 0;
-  img{
+export const HeroSubtitle = styled.p`
+  font-size: 1.25rem;
+  color: #a0a0a0;
+  max-width: 700px;
+  line-height: 1.7;
 
-  }
-  @media (max-width: 767px) {
-    margin: 0 auto;
-    img{
-      width: 100%;
-      height: auto;
-  }
+  @media (max-width: 768px) {
+    font-size: 1rem;
   }
 `;
 
-export const ProfileText = styled.div`
-  display: flex !important;
-  flex-direction: column;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.64);
-  padding: 1rem;
-  border-radius: 10px;
-  width: 100%;
-  
+export const HeroActions = styled.div`
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
 
-  @media (max-width: 767px) {
+export const HeroCTA = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2rem;
+  background-color: #7781ff;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
 
-    text-align: center;
-    width: 100%;
-    margin-top: 2rem;
+  &:hover {
+    background-color: #8a93ff;
+    transform: translateY(-2px);
+    color: #ffffff;
+  }
+`;
+
+export const HeroCTASecondary = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2rem;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: #7781ff;
+    color: #7781ff;
   }
 `;

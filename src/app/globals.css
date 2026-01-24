@@ -1,25 +1,88 @@
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --accent: #7781ff;
+  --accent-hover: #8a93ff;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --border-radius: 12px;
+}
+
 html {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: var(--bg-primary);
 }
+
 main {
-  position: relative; 
+  position: relative;
   z-index: 1;
   margin: 0 15%;
+  max-width: 1200px;
 }
+
 @media (max-width: 768px) {
   main {
     margin: 0 5%;
   }
-  
 }
-
 
 body, p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  color: white;
-  font-family: 'Roboto', sans-serif !important;
+  color: var(--text-primary);
+  font-family: 'Inter', 'Roboto', sans-serif !important;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
 }

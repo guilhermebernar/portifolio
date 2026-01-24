@@ -9,11 +9,10 @@ import { VideoContainerLoading } from '../style/main';
 
 import useMainOrchestrator from '../hooks/main';
 
-// Dynamic imports para componentes
 const AboutMe = dynamic(() => import('../components/AboutMe'));
 const Projects = dynamic(() => import('../components/Projects'));
-const Testimonials = dynamic(() => import('../components/Testimonials'));
 const Skills = dynamic(() => import('../components/Skills'));
+const Contact = dynamic(() => import('../components/Contact'));
 const ProfileSection = dynamic(() => import('../components/ProfileSection'));
 
 export default function Home() {
@@ -46,9 +45,14 @@ export default function Home() {
             </header>
             <ProfileSection data={data} getTranslation={getTranslation} language={language} />
             <AboutMe data={data.aboutMe} getTranslation={getTranslation} language={language} />
-            <Projects experiences={data.experiences} getTranslation={getTranslation} language={language} />
-            <Skills softSkills={data.softSkills} hardSkills={data.hardSkills} getTranslation={getTranslation} language={language} />
-            <Testimonials data={data.testimonials} getTranslation={getTranslation} language={language} />
+            <Projects
+              cases={data.cases}
+              archiveProjects={data.archiveProjects}
+              getTranslation={getTranslation}
+              language={language}
+            />
+            <Skills skills={data.skills} getTranslation={getTranslation} language={language} />
+            <Contact data={data.contact} getTranslation={getTranslation} language={language} />
           </main>
         </>
       )}
