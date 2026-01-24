@@ -14,6 +14,7 @@ const Projects = dynamic(() => import('../components/Projects'));
 const Skills = dynamic(() => import('../components/Skills'));
 const Contact = dynamic(() => import('../components/Contact'));
 const ProfileSection = dynamic(() => import('../components/ProfileSection'));
+const WhatsAppButton = dynamic(() => import('../components/WhatsAppButton'));
 
 export default function Home() {
   const {
@@ -54,6 +55,7 @@ export default function Home() {
             <Skills skills={data.skills} getTranslation={getTranslation} language={language} />
             <Contact data={data.contact} getTranslation={getTranslation} language={language} />
           </main>
+          <WhatsAppButton />
         </>
       )}
     </>

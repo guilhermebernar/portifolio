@@ -14,7 +14,7 @@ export const ToggleContainer = styled.div`
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  margin: 2rem auto 0 auto;
+  margin: 1rem auto 0 auto;
 `;
 
 export const ToggleBall = styled.div`

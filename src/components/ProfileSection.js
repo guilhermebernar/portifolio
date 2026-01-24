@@ -1,13 +1,12 @@
 import { HeroContainer, HeroContent, HeroImageContainer, HeroTitle, HeroSubtitle, HeroActions, HeroCTA, HeroCTASecondary } from '@/style/components/ProfileSection';
 import Image from 'next/image';
-import ProfileImage from '../app/assets/images/profile.png';
 
 export default function ProfileSection({ data, getTranslation, language }) {
   return (
     <HeroContainer>
       <HeroImageContainer>
         <Image
-          src={ProfileImage}
+          src="/eu.png"
           alt={data.name}
           width={180}
           height={180}

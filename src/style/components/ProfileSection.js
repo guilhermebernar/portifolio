@@ -59,7 +59,7 @@ export const HeroTitle = styled.h1`
 
 export const HeroSubtitle = styled.p`
   font-size: 1.25rem;
-  color: #a0a0a0;
+  color: #d0d0d0;
   max-width: 700px;
   line-height: 1.7;
 
