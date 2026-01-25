@@ -1,10 +1,20 @@
-import { ToggleBall, ToggleContainer, ToggleLabel } from '@/style/components/LenguageToggle';
+import Image from 'next/image';
+import brFlag from '../app/assets/images/icons/br-flag.png';
+import usFlag from '../app/assets/images/icons/us-flag.png';
+import { ToggleBall, ToggleContainer } from '@/style/components/LenguageToggle';
 
 function LanguageToggle({ language, handleLanguageToggle }) {
+  const flag = language === 'pt' ? brFlag : usFlag;
+
   return (
     <ToggleContainer onClick={handleLanguageToggle}>
-      <ToggleLabel $active={language === 'pt'}>PT</ToggleLabel>
-      <ToggleLabel $active={language === 'en'}>EN</ToggleLabel>
+      <Image
+        src={flag}
+        alt="Language flag"
+        fill
+        style={{ objectFit: 'cover' }}
+        priority={true}
+      />
       <ToggleBall language={language} />
     </ToggleContainer>
   );
