@@ -2,8 +2,8 @@
 
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import LanguageToggle from '../components/LenguageToggle';
 import { BackgroundVideo } from '../components/BackgroundVideo';
+import Header from '../components/Header';
 import LoadingVideo from '../app/assets/videos/loading.mp4';
 import { VideoContainerLoading } from '../style/main';
 
@@ -40,10 +40,8 @@ export default function Home() {
       ) : (
         <>
           <BackgroundVideo />
+          <Header language={language} handleLanguageToggle={handleLanguageToggle} />
           <main lang={language === 'pt' ? 'pt-BR' : 'en-US'}>
-            <header>
-              <LanguageToggle language={language} handleLanguageToggle={handleLanguageToggle} />
-            </header>
             <ProfileSection data={data} getTranslation={getTranslation} language={language} />
             <AboutMe data={data.aboutMe} getTranslation={getTranslation} language={language} />
             <Projects

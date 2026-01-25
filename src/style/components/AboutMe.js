@@ -4,19 +4,31 @@ export const AboutContainer = styled.section`
   padding: 4rem 2rem;
   max-width: 800px;
   margin: 0 auto;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 10, 0.85) 0%,
+    rgba(17, 17, 17, 0.9) 100%
+  );
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
 `;
 
 export const AboutIntro = styled.p`
   font-size: 1.125rem;
-  line-height: 1.8;
-  color: #a0a0a0;
+  line-height: 1.9;
+  color: #e0e0e0;
   margin-bottom: 3rem;
 `;
 
 export const FocusSection = styled.div`
-  background-color: #111111;
+  background: linear-gradient(
+    135deg,
+    rgba(30, 30, 35, 0.8) 0%,
+    rgba(20, 20, 25, 0.9) 100%
+  );
   border-radius: 12px;
   padding: 2rem;
+  border: 1px solid rgba(119, 129, 255, 0.1);
 `;
 
 export const FocusTitle = styled.h3`

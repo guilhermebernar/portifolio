@@ -22,11 +22,13 @@ main {
   z-index: 1;
   margin: 0 15%;
   max-width: 1200px;
+  padding-top: 60px;
 }
 
 @media (max-width: 768px) {
   main {
     margin: 0 5%;
+    padding-top: 50px;
   }
 }
 
