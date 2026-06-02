@@ -23,17 +23,17 @@ html {
 main {
   position: relative;
   z-index: 1;
-  margin: 0 15%;
+  margin: 0 auto;
   max-width: 1200px;
   padding-top: 60px;
-  width: min(1200px, 70vw);
+  width: min(1200px, calc(100vw - 3rem));
 }
 
 @media (max-width: 768px) {
   main {
-    margin: 0 5%;
+    margin: 0 auto;
     padding-top: 50px;
-    width: 90vw;
+    width: calc(100vw - 2rem);
   }
 }
 
