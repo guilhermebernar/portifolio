@@ -2,7 +2,6 @@
 
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import { BackgroundVideo } from '../components/BackgroundVideo';
 import Header from '../components/Header';
 
 import useMainOrchestrator from '../hooks/main';
@@ -28,7 +27,6 @@ export default function Home() {
         <title>{getTranslation('pageTitle')}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <BackgroundVideo />
       <Header language={language} handleLanguageToggle={handleLanguageToggle} />
       <main lang={language === 'pt' ? 'pt-BR' : 'en-US'}>
         <ProfileSection data={data} getTranslation={getTranslation} language={language} />

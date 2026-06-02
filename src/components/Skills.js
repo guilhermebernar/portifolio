@@ -19,7 +19,7 @@ const stackIconSlugs = {
   "Supabase": ["supabase", "plain"],
   "Docker": ["docker", "plain"],
   "Cloudflare": ["cloudflare", "original"],
-  "AWS/GCP": ["amazonwebservices", "plain-wordmark"],
+  "AWS/GCP": ["amazonwebservices", "original-wordmark"],
   "Python": ["python", "plain"],
   "Rust": ["rust", "plain"],
   "Svelte": ["svelte", "plain"],
@@ -48,7 +48,16 @@ export default function Skills({ skills, getTranslation, language }) {
               {cluster.items.map((item, index) => (
                 <SkillItem key={index}>
                   {getIconUrl(item) && (
-                    <SkillIcon src={getIconUrl(item)} alt="" loading="lazy" />
+                    <SkillIcon
+                      src={getIconUrl(item)}
+                      alt=""
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      onError={(event) => {
+                        event.currentTarget.style.display = 'none';
+                      }}
+                    />
                   )}
                   {item}
                 </SkillItem>

@@ -13,6 +13,14 @@ export const AboutContainer = styled.section`
   backdrop-filter: blur(8px);
 `;
 
+export const AboutTitle = styled.h2`
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+`;
+
 export const AboutIntro = styled.p`
   font-size: 1.125rem;
   line-height: 1.9;

@@ -70,4 +70,8 @@ export const SkillIcon = styled.img`
   width: 1rem;
   height: 1rem;
   object-fit: contain;
+  padding: 0.08rem;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.92);
+  flex: 0 0 1rem;
 `;

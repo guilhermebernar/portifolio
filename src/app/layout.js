@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en, pt-br">
+    <html lang="pt-BR">
       <body className="globalstyle">{children}</body>
     </html>
   )

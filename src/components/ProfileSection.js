@@ -6,11 +6,12 @@ export default function ProfileSection({ data, getTranslation, language }) {
     <HeroContainer>
       <HeroImageContainer>
         <Image
-          src="/eu.png"
+          src="/eu-240.webp"
           alt={data.name}
           width={180}
           height={180}
           priority={true}
+          sizes="180px"
         />
       </HeroImageContainer>
       <HeroContent>
