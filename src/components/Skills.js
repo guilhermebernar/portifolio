@@ -10,25 +10,30 @@ import {
 } from "@/style/components/Skills";
 
 const stackIconSlugs = {
-  "Next.js": "nextjs",
-  "React/Next.js": "nextjs",
-  "TypeScript": "typescript",
-  "React": "react",
-  "Node.js": "nodejs",
-  "PostgreSQL": "postgresql",
-  "Supabase": "supabase",
-  "Docker": "docker",
-  "Cloudflare": "cloudflare",
-  "AWS/GCP": "amazonwebservices",
-  "Python": "python",
-  "Rust": "rust",
-  "Svelte": "svelte",
-  "GraphQL": "graphql"
+  "Next.js": ["nextjs", "plain"],
+  "React/Next.js": ["nextjs", "plain"],
+  "TypeScript": ["typescript", "plain"],
+  "React": ["react", "original"],
+  "Node.js": ["nodejs", "plain"],
+  "PostgreSQL": ["postgresql", "plain"],
+  "Supabase": ["supabase", "plain"],
+  "Docker": ["docker", "plain"],
+  "Cloudflare": ["cloudflare", "original"],
+  "AWS/GCP": ["amazonwebservices", "plain-wordmark"],
+  "Python": ["python", "plain"],
+  "Rust": ["rust", "plain"],
+  "Svelte": ["svelte", "plain"],
+  "GraphQL": ["graphql", "plain"]
 };
 
 const getIconUrl = (item) => {
-  const slug = stackIconSlugs[item] || stackIconSlugs[item.split('/')[0]];
-  return slug ? `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${slug}/${slug}-original.svg` : null;
+  const iconConfig = stackIconSlugs[item] || stackIconSlugs[item.split('/')[0]];
+  if (!iconConfig) {
+    return null;
+  }
+
+  const [slug, variant] = iconConfig;
+  return `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${slug}/${slug}-${variant}.svg`;
 };
 
 export default function Skills({ skills, getTranslation, language }) {

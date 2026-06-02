@@ -1,19 +1,29 @@
 import styled from 'styled-components';
 
-export const ToggleContainer = styled.div`
+export const ToggleContainer = styled.button`
   width: 60px;
   height: 24px;
   border-radius: 25px;
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4px;
+  padding: 0;
+  border: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  background-color: #111111;
+  line-height: 0;
+`;
+
+export const ToggleFlag = styled.img`
+  display: block;
+  width: 60px;
+  height: 24px;
+  max-width: 60px;
+  min-width: 60px;
+  object-fit: cover;
 `;
 
 export const ToggleBall = styled.div`
