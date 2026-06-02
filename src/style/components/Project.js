@@ -14,14 +14,21 @@ export const CasesTitle = styled.h2`
 `;
 
 export const CaseCard = styled.article`
-  background-color: #111111;
+  background: linear-gradient(180deg, rgba(17, 17, 17, 0.96), rgba(12, 12, 16, 0.96));
+  border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 12px;
   padding: 2rem;
   margin-bottom: 1.5rem;
-  transition: transform 0.2s ease;
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.26);
+  transition: transform 0.2s ease, border-color 0.2s ease;
 
   &:hover {
     transform: translateY(-2px);
+    border-color: rgba(119, 129, 255, 0.24);
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.25rem;
   }
 `;
 
@@ -30,6 +37,7 @@ export const CaseTitle = styled.h3`
   font-weight: 600;
   color: #7781ff;
   margin-bottom: 1.5rem;
+  line-height: 1.35;
 `;
 
 export const CaseSection = styled.div`
@@ -53,7 +61,7 @@ export const CaseSectionTitle = styled.span`
 export const CaseSectionText = styled.p`
   font-size: 1rem;
   line-height: 1.6;
-  color: #ffffff;
+  color: #ececf2;
   margin: 0;
 `;
 
@@ -68,7 +76,7 @@ export const CaseTag = styled.span`
   font-size: 0.75rem;
   font-weight: 500;
   color: #7781ff;
-  background-color: rgba(119, 129, 255, 0.1);
+  background-color: rgba(119, 129, 255, 0.11);
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
   border: 1px solid rgba(119, 129, 255, 0.2);
@@ -77,7 +85,7 @@ export const CaseTag = styled.span`
 export const ArchiveSection = styled.div`
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid #222222;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   text-align: center;
   color: #a0a0a0;
   font-size: 0.875rem;

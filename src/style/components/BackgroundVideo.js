@@ -9,6 +9,16 @@ export const VideoContainer = styled.div`
   z-index: -1000;
   background-color: #0a0a0a;
   overflow: hidden;
+  pointer-events: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 25% 10%, rgba(119, 129, 255, 0.12), transparent 28rem),
+      linear-gradient(180deg, rgba(10, 10, 10, 0.65), rgba(10, 10, 10, 0.98));
+  }
 
   video {
     position: absolute;
@@ -20,7 +30,12 @@ export const VideoContainer = styled.div`
     width: auto;
     height: auto;
     object-fit: cover;
-    opacity: ${props => props.$isLoaded ? 0.6 : 0};
-    transition: opacity 1s ease-in-out;
+    opacity: 0.28;
+  }
+
+  @media (max-width: 768px), (prefers-reduced-motion: reduce) {
+    video {
+      display: none;
+    }
   }
 `;

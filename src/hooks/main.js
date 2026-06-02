@@ -5,18 +5,10 @@ import dataEn from '../data/en.json';
 
 export default function useMainOrchestrator() {
   const [language, setLanguage] = useState('pt');
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const browserLanguage = navigator.language.startsWith('pt') ? 'pt' : 'en';
     setLanguage(browserLanguage);
-  }, []);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-    return () => clearTimeout(timer);
   }, []);
 
   const handleLanguageToggle = () => {
@@ -30,5 +22,5 @@ export default function useMainOrchestrator() {
 
   const data = language === 'pt' ? dataPt : dataEn;
 
-  return { data, language, loading, handleLanguageToggle, getTranslation, setLoading };
+  return { data, language, handleLanguageToggle, getTranslation };
 }

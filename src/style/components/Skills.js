@@ -23,9 +23,11 @@ export const SkillsGrid = styled.div`
 `;
 
 export const SkillCard = styled.div`
-  background-color: #111111;
+  background: linear-gradient(180deg, rgba(17, 17, 17, 0.96), rgba(14, 14, 18, 0.96));
+  border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 12px;
   padding: 1.5rem;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.25);
 `;
 
 export const SkillCardTitle = styled.h3`
@@ -45,14 +47,27 @@ export const SkillsList = styled.ul`
 `;
 
 export const SkillItem = styled.li`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   font-size: 0.875rem;
-  color: #a0a0a0;
-  background-color: #1a1a1a;
-  padding: 0.375rem 0.75rem;
+  color: #d8d8e0;
+  background-color: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.45rem 0.75rem;
   border-radius: 6px;
-  transition: color 0.2s ease;
+  min-height: 2.15rem;
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
 
   &:hover {
     color: #ffffff;
+    border-color: rgba(119, 129, 255, 0.45);
+    background-color: rgba(119, 129, 255, 0.1);
   }
+`;
+
+export const SkillIcon = styled.img`
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
 `;
