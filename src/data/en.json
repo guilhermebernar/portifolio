@@ -1,17 +1,49 @@
 {
   "name": "Guilherme Bernardo da Nóbrega",
-  "heroTitle": "Digital Systems Architecture · Automation · Infrastructure",
-  "heroSubtitle": "I build systems and automations that scale with governance, security, and continuous evolution.",
+  "heroTitle": "Full Stack Engineering · Automation · Integrations",
+  "heroSubtitle": "I build digital products, internal systems and automations that reduce manual work and scale operations.",
   "aboutMe": {
-    "intro": "I work on the architecture and development of digital systems with a focus on automation, integration, and scalability. I operate at the intersection of technology and business, taking technical responsibility for products, platforms, and critical infrastructures. I have experience in institutional and entrepreneurial environments, dealing with systems that require security, data governance, and continuous evolution. My work ranges from architectural decisions to implementing solutions that optimize processes, reduce operational costs, and increase efficiency. Currently, I focus my work on automation, digital identity (OIDC), cloud infrastructure, and long-term oriented digital products. I seek projects where technology is not the end, but the foundation for sustainable growth and qualified decision-making.",
+    "intro": "I work on the architecture and development of digital products, internal systems and automations focused on operational efficiency, integration and scalability. I operate at the intersection of technology and business, taking technical responsibility for platforms, integrations and infrastructure. My core stack includes Next.js, React, TypeScript, Node.js, PostgreSQL, Supabase and Docker, with complementary use of Python, Rust and mobile stacks according to project needs.",
     "focus": [
       "Systems architecture and integrations",
       "Process automation and orchestration",
-      "Identity and access control (OIDC/SSO)",
+      "Full stack digital products",
       "Infrastructure and operations (Docker/Cloud)"
     ]
   },
   "cases": [
+    {
+      "id": "erp-fiscal-max-pet",
+      "title": "MAX PET Fiscal ERP",
+      "problem": "The operation needed to centralize fiscal routines, POS, inventory and internal processes in a consistent system.",
+      "solution": "Designed and developed an ERP with automated invoice issuing, inventory control, POS and operational routines.",
+      "result": "Integrated operational base to reduce manual work, increase fiscal control and improve business management.",
+      "tags": ["ERP", "Fiscal", "POS", "Inventory", "C#", "Python"]
+    },
+    {
+      "id": "altiva-servicos",
+      "title": "Altiva Serviços - B2B Service Order Platform",
+      "problem": "A service order cycle with multiple actors, approvals and evidence needed traceability and control.",
+      "solution": "B2B platform connecting fleets, repair shops, quotes, digital approvals, execution, invoices, delivery and audit trail.",
+      "result": "Simplified service workflow with digital approval, audit snapshot and multi-company operation.",
+      "tags": ["B2B", "Service Orders", "Audit", "Rust", "Svelte"]
+    },
+    {
+      "id": "beautylink",
+      "title": "BeautyLink - Product for Beauty Professionals",
+      "problem": "Beauty professionals needed an organized digital presence oriented toward conversion.",
+      "solution": "Architecture, technical leadership and development of a digital product with TypeScript and PostgreSQL.",
+      "result": "Production product to organize links, digital presence and user journey.",
+      "tags": ["TypeScript", "PostgreSQL", "Digital Product", "DevAcontecer"]
+    },
+    {
+      "id": "podcriar",
+      "title": "PodCriar - Sponsors and Incentivized Projects",
+      "problem": "Sponsors and approved incentive-law project proponents need a clearer and more traceable way to connect.",
+      "solution": "Digital platform connecting sponsoring companies to cultural, social and sports projects approved under incentive laws.",
+      "result": "Product base to connect sponsorship supply and fundraising demand in a digital workflow.",
+      "tags": ["TypeScript", "PostgreSQL", "Marketplace", "Incentivized Projects"]
+    },
     {
       "id": "hospital-do-olho",
       "title": "Hospital do Olho - Intranet / Identity / Integration",
@@ -62,6 +94,7 @@
   },
   "contact": {
     "email": "contato@gbernardo.dev",
+    "website": "gbernardo.dev",
     "linkedin": "guilherme-bernardo-da-nobrega",
     "github": "guilhermebernar"
   }

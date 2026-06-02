@@ -14,6 +14,7 @@ const translations = {
     "result": "Result",
     "linkedin": "LinkedIn",
     "email": "Email",
+    "website": "Website",
     "github": "GitHub"
   },
   pt: {
@@ -31,6 +32,7 @@ const translations = {
     "result": "Resultado",
     "linkedin": "LinkedIn",
     "email": "Email",
+    "website": "Site",
     "github": "GitHub"
   }
 };

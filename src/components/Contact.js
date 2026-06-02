@@ -15,6 +15,16 @@ export default function Contact({ data, getTranslation, language }) {
           <ContactIcon>@</ContactIcon>
           {data.email}
         </ContactLink>
+        {data.website && (
+          <ContactLink
+            href={`https://${data.website}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ContactIcon>www</ContactIcon>
+            {data.website}
+          </ContactLink>
+        )}
         <ContactLink
           href={`https://linkedin.com/in/${data.linkedin}`}
           target="_blank"

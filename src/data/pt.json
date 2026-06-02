@@ -1,17 +1,49 @@
 {
   "name": "Guilherme Bernardo da Nóbrega",
-  "heroTitle": "Arquitetura de Sistemas Digitais · Automação · Infraestrutura",
-  "heroSubtitle": "Construo sistemas e automações que escalam com governança, segurança e evolução contínua.",
+  "heroTitle": "Engenharia Full Stack · Automação · Integrações",
+  "heroSubtitle": "Construo produtos digitais, sistemas internos e automações que reduzem retrabalho e escalam operações.",
   "aboutMe": {
-    "intro": "Atuo na arquitetura e desenvolvimento de sistemas digitais com foco em automação, integração e escalabilidade. Trabalho na interseção entre tecnologia e negócio, assumindo responsabilidade técnica por produtos, plataformas e infraestruturas críticas. Tenho experiência em ambientes institucionais e empreendedores, lidando com sistemas que exigem segurança, governança de dados e evolução contínua. Minha atuação envolve desde decisões arquiteturais até a implementação de soluções que otimizam processos, reduzem custos operacionais e aumentam eficiência. Atualmente, concentro meu trabalho em automação, identidade digital (OIDC), infraestrutura em nuvem e produtos digitais orientados a longo prazo. Busco projetos onde tecnologia não é fim, mas base para crescimento sustentável e tomada de decisão qualificada.",
+    "intro": "Atuo na arquitetura e desenvolvimento de produtos digitais, sistemas internos e automações com foco em eficiência operacional, integração e escalabilidade. Trabalho na interseção entre tecnologia e negócio, assumindo responsabilidade técnica por plataformas, integrações e infraestruturas. Minha base principal é Next.js, React, TypeScript, Node.js, PostgreSQL, Supabase e Docker, com uso complementar de Python, Rust e stacks mobile conforme a necessidade do projeto.",
     "focus": [
       "Arquitetura de sistemas e integrações",
       "Automação e orquestração de processos",
-      "Identidade e controle de acesso (OIDC/SSO)",
+      "Produtos digitais full stack",
       "Infraestrutura e operação (Docker/Cloud)"
     ]
   },
   "cases": [
+    {
+      "id": "erp-fiscal-max-pet",
+      "title": "ERP Fiscal MAX PET",
+      "problem": "Operação precisava centralizar rotinas fiscais, PDV, estoque e processos internos em um sistema consistente.",
+      "solution": "Projeto e desenvolvimento de ERP com emissão automatizada de notas fiscais, controle de estoque, PDV e rotinas operacionais.",
+      "result": "Base operacional integrada para reduzir retrabalho, aumentar controle fiscal e melhorar a gestão do negócio.",
+      "tags": ["ERP", "Fiscal", "PDV", "Estoque", "C#", "Python"]
+    },
+    {
+      "id": "altiva-servicos",
+      "title": "Altiva Serviços - Plataforma B2B de OS",
+      "problem": "Ciclo de ordens de serviço com múltiplos atores, aprovações e evidências precisava de rastreabilidade e controle.",
+      "solution": "Plataforma B2B para conectar frotas, oficinas, cotações, aprovações digitais, execução, notas fiscais, entrega e auditoria.",
+      "result": "Fluxo de serviços simplificado, com aprovação digital, snapshot de auditoria e operação multiempresa.",
+      "tags": ["B2B", "OS", "Auditoria", "Rust", "Svelte"]
+    },
+    {
+      "id": "beautylink",
+      "title": "BeautyLink - Produto para Profissionais de Beleza",
+      "problem": "Profissionais de beleza precisavam de uma presença digital organizada e orientada a conversão.",
+      "solution": "Arquitetura, liderança técnica e desenvolvimento de produto digital com stack TypeScript e PostgreSQL.",
+      "result": "Produto acessível em produção para organizar links, presença digital e jornada do usuário.",
+      "tags": ["TypeScript", "PostgreSQL", "Produto Digital", "DevAcontecer"]
+    },
+    {
+      "id": "podcriar",
+      "title": "PodCriar - Patrocinadores e Projetos Incentivados",
+      "problem": "Patrocinadores e proponentes de projetos aprovados em leis de incentivo precisam se encontrar com mais clareza e rastreabilidade.",
+      "solution": "Plataforma digital para conectar empresas patrocinadoras a projetos culturais, sociais e esportivos aprovados.",
+      "result": "Base de produto para aproximar oferta de patrocínio e demanda de captação em um fluxo digital.",
+      "tags": ["TypeScript", "PostgreSQL", "Marketplace", "Projetos Incentivados"]
+    },
     {
       "id": "hospital-do-olho",
       "title": "Hospital do Olho - Intranet / Identidade / Integração",
@@ -62,6 +94,7 @@
   },
   "contact": {
     "email": "contato@gbernardo.dev",
+    "website": "gbernardo.dev",
     "linkedin": "guilherme-bernardo-da-nobrega",
     "github": "guilhermebernar"
   }
